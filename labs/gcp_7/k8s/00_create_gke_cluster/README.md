@@ -37,6 +37,12 @@
    In the result you should get similar output:
 
    ![](./img/06_kubectl_config_view_result.png)
+   
+1. Get list of nodes in a cluster
+
+   ```bash
+   kubectl get nodes
+   ```
 
 ## END LAB
 
