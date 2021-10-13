@@ -5,7 +5,7 @@
 
 # Create GKE Cluster
 
-1. Copy the following command, update the `[YOUR-PROJECT-ID]` and run it from Cloud Shell:
+1. Run the following command:
 
    ```bash
    export PROJECT_ID=`gcloud config get-value project` && \
@@ -26,8 +26,6 @@
 
    This commend will create GKE cluster. It takes approx. 3 minutes to create a cluster.
 
-   You can find _Project ID_ on the Dashboard page in GCP (in the navigation menu choose _Home_ > _Dashboard_)
-
 1. Verify that cluster is up and running:
 
    ```bash
@@ -39,6 +37,12 @@
    In the result you should get similar output:
 
    ![](./img/06_kubectl_config_view_result.png)
+   
+1. Get list of nodes in a cluster
+
+   ```bash
+   kubectl get nodes
+   ```
 
 ## END LAB
 
